@@ -1,0 +1,3 @@
+﻿group,n_total,n_success,success_rate,wall_time_s,throughput_rps,total_prompt_tokens,total_cached_tokens,cache_hit_rate,total_real_prefill_tokens,ttft_p50,ttft_p95,tpot_p50,tpot_p95,e2e_p50,e2e_p95
+shared_prefix,32,32,1.0,0.537,59.549,67584,65536,0.9697,2048,38.613,45.241,6.623,6.894,135.175,142.239
+dispersed_prefix,32,32,1.0,3.317,9.647,67584,0,0.0,67584,436.722,690.077,25.914,43.657,826.908,894.815
