@@ -35,7 +35,7 @@
 
 相关文档：[Anaconda 教程 | 菜鸟教程](https://www.runoob.com/python-qt/anaconda-tutorial.html)
 
-![conda-env](/image/conda-env.png)
+![conda-env](./image/conda-env.png)
 
 **环境1(sglang)**: SGLang 0.5.14
 
@@ -72,7 +72,7 @@ modelscope download --model Qwen/Qwen3-0.6B --local_dir ~/models/Qwen3-0.6B
 
 得到以下SGLang配置Qwen3指令：
 
-![sglang-qwen3](/image/sglang-qwen3.png)
+![sglang-qwen3](./image/sglang-qwen3.png)
 
 ```bash
 python -m sglang.launch_server \
@@ -85,13 +85,13 @@ python -m sglang.launch_server \
 
 **在环境1(sglang)中启动 SGLangOpenAI-compatible 服务：**
 
-![sglang-start](/image/sglang-start.png)
+![sglang-start](./image/sglang-start.png)
 
 出现以上内容表示启动成功
 
 **在环境2(client)中访问 /v1/models：**
 
-![client-v1-models](/image/client-v1-models.png)
+![client-v1-models](./image/client-v1-models.png)
 
 出现以上内容表示访问成功
 
@@ -99,7 +99,7 @@ python -m sglang.launch_server \
 
 **发送一次推理请求**
 
-![client-chat](/image/client-chat.png)
+![client-chat](./image/client-chat.png)
 
 **推理内容：**
 
@@ -115,7 +115,7 @@ python -m sglang.launch_server \
 
 接着从 Mooncake FAST’25 trace的arxiv-trace/mooncake_trace.jsonl 中采样 20条请求记录。根据 input_length 和 output_length 构造 synthetic prompt，用 Poisson 到达过程生成请求时间，并将这组小 workload 发送到 SGLang。记录每个请求的 input tokens、output tokens、status、TTFT 、latency。
 
-运行程序[03_mooncake_bench.py](./code/03_mooncake_bench.py)(由claude生成)得到以下数据：![cilent-trace](/image/cilent-trace.png)
+运行程序[03_mooncake_bench.py](./code/03_mooncake_bench.py)(由claude生成)得到以下数据：![cilent-trace](./image/cilent-trace.png)
 
 截图保存为截图 2放入[操作保存.pdf](./提交的PDF文件/操作保存.pdf)
 

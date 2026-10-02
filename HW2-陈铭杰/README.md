@@ -70,7 +70,7 @@ python -m sglang.launch_server \
 
 出现以下内容即代表服务启动成功：
 
-![sglang-start-success](/image/sglang-start-success.png)
+![sglang-start-success](./image/sglang-start-success.png)
 
 保持这个终端不要关闭!
 
@@ -88,7 +88,7 @@ python src/target1/build_loads.py --out src/target1/loads.json
 
 生成结果loads.json
 
-![loads_json](/image/loads_json.png)
+![loads_json](./image/loads_json.png)
 
 由于令SEED=2026(用于random函数，作为伪随机)任何机器上都会生成完全相同的 64 条负载
 
@@ -159,7 +159,7 @@ python src/target1/bench.py --run run-5
 
 实验参数：
 
-![build_loads_1](/image/build_loads_1.png)
+![build_loads_1](./image/build_loads_1.png)
 
 详细代码可见，配有注释[build_loads.py](.\src\target1\build_loads.py)
 
@@ -181,17 +181,17 @@ python src/target1/bench.py --run run-5
 
 **配置：**根据题目要求设置参数：
 
-![bench_setting](/image/bench_setting.png)
+![bench_setting](./image/bench_setting.png)
 
 **接口：**
 
 ​	**1)通过原生 `POST /generate` 接口发送 input_ids(由loads.json提供)，并使用流式响应**
 
-![generate](/image/generate.png)
+![generate](./image/generate.png)
 
 ​	**2)先用短请求完成服务预热,每组测量前等待已有请求结束，调用 `POST /flush_cache` 并确认成功**
 
-![flush_cache](/image/flush_cache.png)
+![flush_cache](./image/flush_cache.png)
 
 **实验流程**
 
